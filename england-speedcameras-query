@@ -1,0 +1,12 @@
+/*
+This is overpass ql
+*/
+[out:json][timeout:450];
+area[name="England"];
+(
+        node(area)["highway"="speed_camera"];
+);
+out body;
+>;
+out skel qt;
+

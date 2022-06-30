@@ -1,0 +1,14 @@
+/*
+This is overpass ql
+*/
+[out:json][timeout:250];
+area[name="England"];
+(
+        //node["highway"="motorway"];
+        way(area)["highway"="motorway"];
+        //relation["highway"="motorway"];
+);
+out body;
+>;
+out skel qt;
+
