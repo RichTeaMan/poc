@@ -1,0 +1,12 @@
+/*
+This is overpass ql
+*/
+[out:json][timeout:450];
+area[name="England"];
+(
+        way(area)["highway"="primary"];
+);
+out body;
+>;
+out skel qt;
+

@@ -1,0 +1,12 @@
+/*
+This is overpass ql
+*/
+[out:json][timeout:450];
+area[name="England"];
+(
+        node(area)["communication:mobile_phone"="yes"];
+);
+out body;
+>;
+out skel qt;
+
